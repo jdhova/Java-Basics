@@ -29,29 +29,88 @@ class Hello
         str = "Hello World this is a code";
         String.join(str+strs);
         String.join(str,strs,"yellow");
-        
-
-        
-        
+    
 
     
 
-        System.out.println(num1 + marks);
-        System.out.println(num1);
-        System.out.println(marks);
-        System.out.println(chh);
-        System.out.println(mark);
-        System.out.println(by);
-        System.out.println(sh);
-        System.out.println(l);
-        System.out.println(b);
-        System.out.println(reallyBig);
-        System.out.println("YES");
-        System.out.println( String.join(str+strs));
+        // System.out.println(num1 + marks);
+        // System.out.println(num1);
+        // System.out.println(marks);
+        // System.out.println(chh);
+        // System.out.println(mark);
+        // System.out.println(by);
+        // System.out.println(sh);
+        // System.out.println(l);
+        // System.out.println(b);
+        // System.out.println(reallyBig);
+        // System.out.println("YES");
+        // System.out.println( String.join(str+strs));
 
     }
     
 }
+
+// Adding
+
+
+class Hello2 
+{
+    public static void main(String a[])
+    {   
+       int x = 0;
+        while (x < 21) {
+         if (x % 15 == 0) {
+            System.out.println(x + " "+ "Fizz Buzz");
+         } else if (x % 5 == 0)  {
+            System.out.println(x + " "+ "Buzz");
+         } else if (x % 3 == 0){
+            System.out.println(x + " "+ "Fizz");
+         } else{
+            System.out.println(x + " "+ "neutral");
+         }
+          x++;
+        }
+        
+
+
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // DIFFRENCE BETWEEN DOUBLE AND INT AND FLOAT
 //HOW DO I WRITE MORE THAN 1O DIGITS IN JAVA
