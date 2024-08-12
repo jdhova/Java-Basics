@@ -320,5 +320,41 @@ class Fifth {
 }
 
 ```
+#### Main and Public Class OOP
+```
+
+public class Main {
+  // Static method
+  static void myname() {
+    System.out.println("My Name us Jude");
+  }
+
+  // Public method****
+  public void myOccupation() {
+    System.out.println("I am a Software Dev");
+  }
+
+  
+  // Public method****
+  public void myEducation() {
+    System.out.println("I have a Msc degree");
+  }
+
+
+  // Main method
+  public static void main(String[] args) {
+    myname(); // Call the static method
+
+    Main myObj = new Main(); // Create an object of MyClass
+    myObj.myOccupation(); // Call the public method
+
+    Main myObj2 = new Main(); // Create an object of MyClass
+    myObj2.myEducation(); // Call the public method
+
+    
+  }
+}
+
+```
 
 

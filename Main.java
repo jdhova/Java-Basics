@@ -100,54 +100,100 @@
 //     }
 
 
+// public class Main {
+//   int x = 500;
+//  final int y = 50;
+//   char l ='f';
+//  String name = "Jude";
+//  String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+
+//   public static void main(String[] args) {
+
+//     Main myObj1 = new Main();  // Object 1
+//     Main myObj2 = new Main();  // Object 2
+//     System.out.println(myObj1.x);
+//     System.out.println(myObj1.y);
+//     System.out.println(myObj1.l);
+//     System.out.println(myObj1.name);
+//     // System.out.println(myObj2.cars);
+//   }
+// }
+
+// class Second {
+//   public static void main(String[] args) {
+//     Main myObj1 = new Main();
+//     System.out.println(myObj1.x);
+//   }
+// }
+
+// class Third {
+//   public static void main(String[] args) {
+//     Main myObj1 = new Main();
+//     System.out.println(myObj1.name);
+//   }
+// }
+
+// class fourth {
+//   public static void main(String[] args) {
+//     Main myObj1 = new Main();
+//     myObj1.name = "James";
+//     System.out.println(myObj1.name);
+//   }
+// }
+
+// class Fifth {
+//   public static void main(String[] args) {
+//     Main myObj1 = new Main();
+//     System.out.println(myObj1.cars);
+//   }
+// }
+
+
 public class Main {
-  int x = 500;
- final int y = 50;
-  char l ='f';
- String name = "Jude";
- String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+  // Static method
+  static void myname() {
+    System.out.println("My Name us Jude");
+  }
 
+  // Public method****
+  public void myOccupation() {
+    System.out.println("I am a Software Dev");
+  }
+
+  
+  // Public method****
+  public void myEducation() {
+    System.out.println("I have a Msc degree");
+  }
+
+
+  // Main method
   public static void main(String[] args) {
+    myname(); // Call the static method
 
-    Main myObj1 = new Main();  // Object 1
-    Main myObj2 = new Main();  // Object 2
-    System.out.println(myObj1.x);
-    System.out.println(myObj1.y);
-    System.out.println(myObj1.l);
-    System.out.println(myObj1.name);
-    // System.out.println(myObj2.cars);
+    Main myObj = new Main(); // Create an object of MyClass
+    myObj.myOccupation(); // Call the public method
+
+    Main myObj2 = new Main(); // Create an object of MyClass
+    myObj2.myEducation(); // Call the public method
+
+    
   }
 }
 
-class Second {
-  public static void main(String[] args) {
-    Main myObj1 = new Main();
-    System.out.println(myObj1.x);
-  }
-}
 
-class Third {
-  public static void main(String[] args) {
-    Main myObj1 = new Main();
-    System.out.println(myObj1.name);
-  }
-}
 
-class fourth {
-  public static void main(String[] args) {
-    Main myObj1 = new Main();
-    myObj1.name = "James";
-    System.out.println(myObj1.name);
-  }
-}
+// public class Main {
+//   static void myMethod() {
+//     System.out.println("Hello World!");
+//   }
 
-class Fifth {
-  public static void main(String[] args) {
-    Main myObj1 = new Main();
-    System.out.println(myObj1.cars);
-  }
-}
+  
 
+//   public static void main(String[] args) {
+//     myMethod();
+//   }
+// }
 
 
 
