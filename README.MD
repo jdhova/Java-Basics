@@ -155,11 +155,7 @@ class Hello2
           x++;
         }
 
-        
-          
-
-
-
+    
     }
     
 }
@@ -191,3 +187,57 @@ class Hello2
     
 }
 ```
+### Nested Loops**
+
+```
+class Hello2 
+{
+    public static void main(String a[])
+    {   
+        for (int i = 1; i <= 3; i++) {
+            System.out.println("Mercedes: " + i); // Executes 2 times
+            
+            // Inner loop
+            for (int j = 1; j <= 3; j++) {
+              System.out.println(" C-Class: " + j); // Executes 6 times (2 * 3)
+            }
+          } 
+        
+
+
+    }
+    
+}
+```
+### For off loops
+```
+class Hello2 
+{
+    public static void main(String a[])
+    {   
+        String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+        for (String i : cars) {
+          System.out.println(i[0]);
+        }
+        
+
+    }
+    
+}
+
+***Unpacking an array**
+public class Hello2 {
+    public static void main(String[] args) {
+      int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };
+      for (int i = 0; i < myNumbers.length; ++i) {
+         for(int j = 0; j < myNumbers[i].length; ++j) {
+            System.out.println(myNumbers[i][j]);
+         }
+      }
+    }
+ }
+ 
+
+```
+
+### Java Methods

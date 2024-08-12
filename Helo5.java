@@ -57,28 +57,60 @@ class Hello2
 {
     public static void main(String a[])
     {   
-       int x = 0;
-        while (x < 21) {
-         if (x % 15 == 0) {
-            System.out.println(x + " "+ "Fizz Buzz");
-         } else if (x % 5 == 0)  {
-            System.out.println(x + " "+ "Buzz");
-         } else if (x % 3 == 0){
-            System.out.println(x + " "+ "Fizz");
-         } else{
-            System.out.println(x + " "+ "neutral");
-         }
-          x++;
+        String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+        for (String i : cars) {
+          System.out.println(i);
         }
         
-
 
     }
     
 }
 
+public class Main {
+    public static void main(String[] args) {
+          String[][] cars = {{"Volvo", "BMW"}, {"Ford", "Mazda"}};
+      for (String i = 0; i < cars.length; ++i) {
+         for(int j = 0; j < cars[i].length; ++j) {
+            System.out.println(cars[i][j]);
+         }
+      }
+    }
+ }
+ 
 
+ public class Helo5 {
+    public static void main(String a[] ) {
+     String[] cars = {"Volvo", "BMW","Ford", "Mazda"};
+    }
+ }
+ 
 
+ class Hellos
+{
+    public static void main(String a[])
+    {   
+        String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+        for (String i : cars) {
+          System.out.println(i);
+        }
+        
+
+    }
+    
+}
+
+public class Hellss {
+    public static void main(String[] args) {
+      int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };
+      for (int i = 0; i < myNumbers.length; ++i) {
+         for(int j = 0; j < myNumbers[i].length; ++j) {
+            System.out.println(myNumbers[i][j]);
+         }
+      }
+    }
+ }
+ 
 
 
 
