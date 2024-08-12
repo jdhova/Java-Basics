@@ -241,4 +241,77 @@ public class Hello2 {
 
 ```
 
-### Java Methods
+### Java Methods **pending
+
+
+
+### Object-Oriented Programming.
+
+```
+public class Main {
+  int x = 5;
+  int y = 50;
+  char l ='f';
+ String name = "Jude";
+ String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+
+  public static void main(String[] args) {
+    
+    Main myObj1 = new Main();  // Object 1
+    Main myObj2 = new Main();  // Object 2
+    System.out.println(myObj1.x);
+    System.out.println(myObj1.y);
+    System.out.println(myObj1.l);
+    System.out.println(myObj1.name);
+    // System.out.println(myObj2.cars);
+  }
+}
+```
+
+### Classes in OOP
+
+```
+
+public class Main {
+  int x = 500;
+  int y = 50;
+  char l ='f';
+ String name = "Jude";
+ String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+
+  public static void main(String[] args) {
+
+    Main myObj1 = new Main();  // Object 1
+    Main myObj2 = new Main();  // Object 2
+    System.out.println(myObj1.x);
+    System.out.println(myObj1.y);
+    System.out.println(myObj1.l);
+    System.out.println(myObj1.name);
+    // System.out.println(myObj2.cars);
+  }
+}
+
+class Second {
+  public static void main(String[] args) {
+    Main myObj1 = new Main();
+    System.out.println(myObj1.x);
+  }
+}
+
+class Third {
+  public static void main(String[] args) {
+    Main myObj1 = new Main();
+    System.out.println(myObj1.name);
+  }
+}
+
+class fourth {
+  public static void main(String[] args) {
+    Main myObj1 = new Main();
+    System.out.println(myObj1.l);
+  }
+}
+
+```
+
+
