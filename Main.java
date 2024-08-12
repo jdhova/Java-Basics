@@ -102,7 +102,7 @@
 
 public class Main {
   int x = 500;
-  int y = 50;
+ final int y = 50;
   char l ='f';
  String name = "Jude";
  String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
@@ -136,7 +136,8 @@ class Third {
 class fourth {
   public static void main(String[] args) {
     Main myObj1 = new Main();
-    System.out.println(myObj1.l);
+    myObj1.name = "James";
+    System.out.println(myObj1.name);
   }
 }
 
