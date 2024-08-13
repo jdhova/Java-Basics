@@ -366,8 +366,25 @@ public class Main {
 
 
 ```
-### Classes 
+### Constructors 
 ```
+public class Main {
+  int age; String education; char initial;  String name;
+
+ 
+  public Main(int myAge, String myEducation, char ini,String myName) {
+    age = myAge;
+    education = myEducation;
+    initial = ini;
+    name = myName;
+  }
+
+  public static void main(String[] args) {
+    Main myPerson = new Main(22, "Msc and Phd",'K',"Jude");
+    System.out.println("My name is "+ myPerson.name +
+     " and I graduated with a " + myPerson.education + " and my initial is " + myPerson.initial + " and I am" + myPerson.age + " Years Old! ") ;
+  }
+}
 
 
 ```

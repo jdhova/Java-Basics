@@ -311,52 +311,29 @@
 // }
 
 
-public class Main {
-  // Static method
-  static void myname() {
-    System.out.println("My Name us Jude");
-  }
-
-  static void myAge(int age) {
-    System.out.println("I am "+ age +" Years Old");
-  }
-
-  // Public method****
-  public void myOccupation() {
-    System.out.println("I am a Software Dev");
-  }
-
-  
-  // Public method****
-  public void myEducation() {
-    System.out.println("I have a Msc and PHD degree");
-  }
-
-  public void myYear() {
-    System.out.println(333);
-  }
-
-
-  // Main method
-  public static void main(String[] args) {
-    myname(); // Call the static method
-    myAge(22);
-    Main myObj = new Main(); // Create an object of MyClass
-    myObj.myOccupation(); // Call the public method
-    myObj.myEducation();
-    myObj.myYear();
-
-    
-    
-  }
-}
-
 
 // Main myCar = new Main();     // Create a myCar object
 //     myCar.fullThrottle();      // Call the fullThrottle() method
 //     myCar.speed(200); 
 
 
+public class Main {
+  int age; String education; char initial;  String name;
+
+ 
+  public Main(int myAge, String myEducation, char ini,String myName) {
+    age = myAge;
+    education = myEducation;
+    initial = ini;
+    name = myName;
+  }
+
+  public static void main(String[] args) {
+    Main myPerson = new Main(22, "Msc and Phd",'K',"Jude");
+    System.out.println("My name is "+ myPerson.name +
+     " and I graduated with a " + myPerson.education + " and my initial is " + myPerson.initial + " and I am" + myPerson.age + " Years Old! ") ;
+  }
+}
 
 
 
