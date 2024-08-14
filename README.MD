@@ -443,5 +443,5 @@ class Person2 extends Main {
   }
 }
 
-Person1 and Person2 classes are extension of Person and the info in the class is confidential and encaapsulated
+Person1 and Person2 classes are extension of Person this they inherit the values from Person and the info in the class is confidential and encaapsulated
 ```
