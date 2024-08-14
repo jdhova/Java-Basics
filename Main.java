@@ -317,24 +317,75 @@
 //     myCar.speed(200); 
 
 
-public class Main {
-  int age; String education; char initial;  String name;
+// public class Main {
+//   int age; String education; char initial;  String name;
 
  
-  public Main(int myAge, String myEducation, char ini,String myName) {
-    age = myAge;
-    education = myEducation;
-    initial = ini;
-    name = myName;
-  }
+//   public Main(int myAge, String myEducation, char ini,String myName) {
+//     age = myAge;
+//     education = myEducation;
+//     initial = ini;
+//     name = myName;
+//   }
 
-  public static void main(String[] args) {
-    Main myPerson = new Main(22, "Msc and Phd",'K',"Jude");
-    System.out.println("My name is "+ myPerson.name +
-     " and I graduated with a " + myPerson.education + " and my initial is " + myPerson.initial + " and I am" + myPerson.age + " Years Old! ") ;
+//   public static void main(String[] args) {
+//     Main myPerson = new Main(22, "Msc and Phd",'K',"Jude");
+//     System.out.println("My name is "+ myPerson.name +
+//      " and I graduated with a " + myPerson.education + " and my initial is " + myPerson.initial + " and I am" + myPerson.age + " Years Old! ") ;
+//   }
+// }
+
+
+
+// class Vehicle {
+//   protected String brand = "Ford";
+//   public void honk() {
+//     System.out.println("Tuut, tuut!");
+//   }
+// }
+
+// class Car extends Vehicle {
+//   private String modelName = "Mustang";
+//   public static void main(String[] args) {
+//     Car myFastCar = new Car();
+//     myFastCar.honk();
+//     System.out.println(myFastCar.brand + " " + myFastCar.modelName);
+//   }
+// }
+
+
+class Main {
+  protected String Surname = "OKAGU";
+  public void occupation() {
+    System.out.println("Developer and Engineer!");
+  }
+  private void occupation2() {
+    System.out.println("Developer and Engineer!");
   }
 }
 
+class Person1 extends Main {
+  private String Person1Fname = "Jude";
+  private String Person1MName = "Ike";
+  private int PersonSIN = 222111;
+  public static void main(String[] args) {
+    Person1 info = new Person1();
+    info.occupation();
+    System.out.println(info.Surname + " " + info.Person1Fname + " " + info.Person1MName + " and his sin is" + info.PersonSIN);
+  }
+}
+
+class Person2 extends Main {
+  private String Person1Fname = "Grace";
+  private String Person1MName = "Amarachi";
+  private int PersonSIN = 111222;
+  public static void main(String[] args) {
+    Person2 info = new Person2();
+    info.occupation();
+    System.out.println(info.Surname + " " + info.Person1Fname + " " + info.Person1MName + " and her sin is" + info.PersonSIN);
+  }
+}
+    
 
 
 

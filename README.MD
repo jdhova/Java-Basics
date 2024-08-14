@@ -389,4 +389,59 @@ public class Main {
 
 ```
 
+### Modifiers ***
+```
+Private class are classes that can not be assesed from outside 
+however Public class can be assesed from the outside. more like global variable
+protected The code is accessible in the same package and subclasses
+```
+### Incapsulation ***
+```
+This can be explained as hiding the inner information so it can not be viewed from the outside, However if we use public set and getters can asses this information 
 
+Class attributes can be made read-only (if you only use the get method), or write-only (if you only use the set method) GETTERS and SETTERS
+```
+
+### Java API and packages***
+
+
+### Java Encapsulation
+
+```
+
+class Main {
+  protected String Surname = "OKAGU";
+  public void occupation() {
+    System.out.println("Developer and Engineer!");
+  }
+  
+  protected void occupation2() {
+    System.out.println("Developer and Doctor!");
+  }
+}
+
+class Person1 extends Main {
+  private String Person1Fname = "Jude";
+  private String Person1MName = "Ike";
+  private int PersonSIN = 222111;
+  public static void main(String[] args) {
+    Person1 info = new Person1();
+    info.occupation2();
+    info.occupation();
+    System.out.println(info.Surname + " " + info.Person1Fname + " " + info.Person1MName + " and his sin is " + info.PersonSIN);
+  }
+}
+
+class Person2 extends Main {
+  private String Person1Fname = "Grace";
+  private String Person1MName = "Amarachi";
+  private int PersonSIN = 111222;
+  public static void main(String[] args) {
+    Person2 info = new Person2();
+    info.occupation();
+    System.out.println(info.Surname + " " + info.Person1Fname + " " + info.Person1MName + " and her sin is" + info.PersonSIN);
+  }
+}
+
+Person1 and Person2 classes are extension of Person and the info in the class is confidential and encaapsulated
+```
