@@ -354,43 +354,129 @@
 // }
 
 
-class Main {
-  protected String Surname = "OKAGU";
-  public void occupation() {
-    System.out.println("Developer and Engineer!");
-  }
-  private void occupation2() {
-    System.out.println("Developer and Engineer!");
-  }
-}
+// class Main {
+//   protected String Surname = "OKAGU";
+//   public void occupation() {
+//     System.out.println("Developer and Engineer!");
+//   }
+//   private void occupation2() {
+//     System.out.println("Developer and Engineer!");
+//   }
+// }
 
-class Person1 extends Main {
-  private String Person1Fname = "Jude";
-  private String Person1MName = "Ike";
-  private int PersonSIN = 222111;
-  public static void main(String[] args) {
-    Person1 info = new Person1();
-    info.occupation();
-    System.out.println(info.Surname + " " + info.Person1Fname + " " + info.Person1MName + " and his sin is" + info.PersonSIN);
-  }
-}
+// class Person1 extends Main {
+//   private String Person1Fname = "Jude";
+//   private String Person1MName = "Ike";
+//   private int PersonSIN = 222111;
+//   public static void main(String[] args) {
+//     Person1 info = new Person1();
+//     info.occupation();
+//     System.out.println(info.Surname + " " + info.Person1Fname + " " + info.Person1MName + " and his sin is" + info.PersonSIN);
+//   }
+// }
 
-class Person2 extends Main {
-  private String Person1Fname = "Grace";
-  private String Person1MName = "Amarachi";
-  private int PersonSIN = 111222;
-  public static void main(String[] args) {
-    Person2 info = new Person2();
-    info.occupation();
-    System.out.println(info.Surname + " " + info.Person1Fname + " " + info.Person1MName + " and her sin is" + info.PersonSIN);
-  }
-}
+// class Person2 extends Main {
+//   private String Person1Fname = "Grace";
+//   private String Person1MName = "Amarachi";
+//   private int PersonSIN = 111222;
+//   public static void main(String[] args) {
+//     Person2 info = new Person2();
+//     info.occupation();
+//     System.out.println(info.Surname + " " + info.Person1Fname + " " + info.Person1MName + " and her sin is" + info.PersonSIN);
+//   }
+// }
     
 
+// class OuterClass {
+//   int x = 10;
+
+//   class InnerClass {
+//     int y = 5;
+//   }
+// }
+
+// public class Main {
+//   public static void main(String[] args) {
+//     OuterClass myOuter = new OuterClass();
+//     OuterClass.InnerClass myInner = myOuter.new InnerClass();
+//     System.out.println(myInner.y + myOuter.x);
+//   }
+// }
+
+
+// public class Main {
+//   public static void main(String[]args) {
+//     String letter = "Australia";
+//     String revletter = "";
+
+//     for (int i = 0; i < letter.length(); i++) {
+//       revletter = letter.charAt(i) + revletter;
+      
+//     }
+//     System.out.println(revletter);
+//   }
+// }
+
+// public class Main {
+//   public static void main(String[]args) {
+//     String letter = "KAYAK";
+//     String revletter = "";
+
+//     for (int i = 0; i < letter.length(); i++) {
+//       revletter = letter.charAt(i) + revletter;
+     
+//     }
+//     // System.out.println(revletter+"IS A PAL");
+//     // System.out.println(letter +"IS A PAL");
+//     if (revletter .equals(letter) ) {
+//       System.out.println(revletter.toLowerCase()+" IS A PAL1 "+letter.toLowerCase());
+//     } else {
+//       System.out.println(revletter.toLowerCase()+" IS A PAL "+letter.toLowerCase());
+//     }
+//     // System.out.println(revletter.toLowerCase()+" IS A  Aa  PAL "+letter.toLowerCase());
+    
+//   }
+// }
 
 
 
+// public class  Main{
+//   public static void main ( String []args){
+//     int[] myArray =  {1,3,5,6,7,8};
+//     // int [] myArrays = {};
+//     int sum  = 0;
+//     for(int i = 0; i<myArray.length;i++){
+//       sum =+ myArray[i];
+//     }
+//     // myArrays = myArray.charAt(i) + myArrays;
+    
+//     System.out.println("The sum is: " + sum);
 
+//   }
+  
+  
+// }
+
+//CONV STRING TO ARRAY
+// public class Main {
+//   public static void main(String[] args) {
+//     String myStr = "Hello My Name is Jude";
+//     char[] myArray = myStr.toCharArray();
+//     for (char i : myArray) {
+//       System.out.println(i);
+//     }
+//   }
+// }
+
+public class Main {
+  public static void main(String[] args) {
+    String myStr = "Hello My NAME is Jude";
+    char[] myArray = myStr.toCharArray();
+    for (char i : myArray) {
+      System.out.println(i);
+    }
+  }
+}
 
 
 
@@ -419,6 +505,6 @@ class Person2 extends Main {
 //HOW DO I WRITE MORE THAN 1O DIGITS IN JAVA
 // byte is the smaller version of int
 // what values data types are mutble and what values are immutable?
-// We join strings with , and not + in Java
+// We join strings with , and not args+ in Java
 //max Byte is 256 anyhting else it devides and send the reminder
 //casting and promotion

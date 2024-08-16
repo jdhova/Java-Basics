@@ -405,7 +405,7 @@ Class attributes can be made read-only (if you only use the get method), or writ
 ### Java API and packages***
 
 
-### Java Encapsulation
+### Java Encapsulation Inheritance and Polymorphism
 
 ```
 
@@ -445,3 +445,74 @@ class Person2 extends Main {
 
 Person1 and Person2 classes are extension of Person this they inherit the values from Person and the info in the class is confidential and encaapsulated
 ```
+
+### Inner classes
+
+```
+class OuterClass {
+  int x = 10;
+
+  static class InnerClass {
+    int y = 5;
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    OuterClass.InnerClass myInner = new OuterClass.InnerClass();
+    System.out.println(myInner.y);
+  }
+}
+
+Inner classes can also inherit from the outer class
+```
+
+### QUIZ 
+
+#### palidrone and rev string
+```
+public class Main {
+  public static void main(String[]args) {
+    String letter = "KAYAK";
+    String revletter = "";
+
+    for (int i = 0; i < letter.length(); i++) {
+      revletter = letter.charAt(i) + revletter;
+     
+    }
+    // System.out.println(revletter+"IS A PAL");
+    // System.out.println(letter +"IS A PAL");
+    if (revletter .equals(letter) ) {
+      System.out.println(revletter.toLowerCase()+" IS A PAL1 "+letter.toLowerCase());
+    } else {
+      System.out.println(revletter.toLowerCase()+" IS A PAL "+letter.toLowerCase());
+    }
+    // System.out.println(revletter.toLowerCase()+" IS A  Aa  PAL "+letter.toLowerCase());
+    
+  }
+}
+
+```
+
+### count array and sum
+
+```
+public class  Main{
+  public static void main ( String []args){
+    int[] myArray =  {1,3,5,6,7,8};
+    // int [] myArrays = {};
+    int sum  = 0;
+    for(int i = 0; i<myArray.length;i++){
+      sum =+ myArray[i];
+    }
+    // myArrays = myArray.charAt(i) + myArrays;
+    
+    System.out.println("The sum is: " + sum);
+
+  }
+  
+  
+}
+
+```
+
