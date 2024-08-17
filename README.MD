@@ -514,5 +514,89 @@ public class  Main{
   
 }
 
+public class Main {
+
+  public static void digits(int n) {
+    for (int i = 0; i < n; i++){
+      System.out.println(i);
+    }
+
+  }
+
+  public static void main(String[]args){
+    digits(30);
+  }
+}
+
+```
+## Data Structures
+
+### Big O  0(n) 0(n)2  and 0(1)
+```
+Omega Ω  Thetha θ and Omicron(Big O)  O
+
+Ω takes the least speed, 
+θ medium , 
+O worst case speed
+
+
+A notmal forloop is 0n because it runs a given no of times while
+A nested for loop is 0n2 because it runs n*n times
+
+0(1) or constant time is most effitient bcause we have to do one operation once
+0(n) is when we do an operation n times(for loop)
+0(a + b) is when we do an operation n times(for loop with more than one input arguement)
+0(n)2 is when we do an operation n * n times(nested for loop)
+
+recussions are used to minimize from 0(n)2 to 0(1)
+
+
+
 ```
 
+
+### Big O  0(log n) (sorting Algorithm) 
+
+```
+This is when we split the array into different sorts before we find the value
+that is using sorting before we find the value.
+
+Finding a value by the index is o(1) because we go directl to the index
+Finding a value with the value is O(n) because we need to search the values one after the other.
+
+Inserting a value at the end is 0(1) because it takes less time while usiig index is 0(n) because we need to re arrange the index.
+
+
+```
+#### Linked List
+```
+public class LinkedList {
+  private Node head;
+  private Node tail;
+  private int length;
+
+
+/// create the Node
+  class Node {
+    int value;
+    Node next;
+
+    Node(int value){
+      this.value = value;
+    }
+  }
+
+  public LinkedList(int value) {
+    Node newNode = new Node(value);  // this created a new node 
+    head = newNode;
+    tail = newNode;
+    length = 1;
+
+
+  }
+
+}
+
+
+
+```

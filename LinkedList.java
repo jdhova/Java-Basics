@@ -469,22 +469,65 @@
 // }
 
 
-import java.util.Arrays;
+// import java.util.Arrays;
 
-public class Main {
-  public static void main(String[] args) {
-    String[] cars = {"Volvo", "BMW", "Tesla", "Ford", "Fiat", "Mazda", "Audi"};
-    Arrays.sort(cars);
-    for (String i : cars) {
-      System.out.println(i);
-    }
-  }
-}
-
-
+// public class Main {
+//   public static void main(String[] args) {
+//     String[] cars = {"Volvo", "BMW", "Tesla", "Ford", "Fiat", "Mazda", "Audi"};
+//     Arrays.sort(cars);
+//     for (String i : cars) {
+//       System.out.println(i);
+//     }
+//   }
+// }
 
 
 
+// public class Main {
+
+//   public static void digits(int n) {
+//     for (int i = 0-1; i < n; i++){
+//       System.out.println(i);
+//     }
+
+//   }
+
+//   public static void main(String[]args){
+//     digits(10);
+//   }
+// }
+
+// package misc.classes
+
+// public class Main {
+
+// public class Cookie {
+//   private String color;
+
+//   // public Cookie(String Color) {
+//   //   this.color = color;
+//   // }
+//   public String getColor() {
+//     return color;
+//   }
+
+//   public void setColor(String color){
+//     this.color = color;
+//   }
+
+
+// }
+
+// public static void main(String[]args) {
+//   Cookie cookieOne = new Cookie("Yellow");
+//   Cookie cookieTwo = new Cookie("Red");
+
+//   System.out.println(cookieTwo);
+// }
+
+// }
+
+// Cookie cookieOnCookie = new Cookie("yellow");
 
 
 
@@ -493,13 +536,116 @@ public class Main {
 
 
 
+// public class Main {
+
+//   public static void main(int n){
+
+//     int num1  = 500;
+//     int num2 = 400;
+
+//     System.out.println(num1+num2);
+
+//   }
+// }
 
 
+///  CLASSES VERY IMPORTANT
 
 
+// class Main {
+//   protected String Surname = "OKAGU";
+//   public void occupation() {
+//     System.out.println("Developer and Engineer!");
+//   }
+  
+//   protected void occupation2() {
+//     System.out.println("Developer and Doctor!");
+//   }
+// }
+
+// class Person1 extends Main {
+//   private String Person1Fname = "Jude";
+//   private String Person1MName = "Ike";
+//   private int PersonSIN = 222111;
+//   public static void main(String[] args) {
+//     Person1 info = new Person1();
+//     info.occupation2();
+//     info.occupation();
+//     System.out.println(info.Surname + " " + info.Person1Fname + " " + info.Person1MName + " and his sin is " + info.PersonSIN);
+//   }
+// }
+
+// class Person2 extends Main {
+//   private String Person1Fname = "Grace";
+//   private String Person1MName = "Amarachi";
+//   private int PersonSIN = 111222;
+//   public static void main(String[] args) {
+//     Person2 info = new Person2();
+//     info.occupation();
+//     System.out.println(info.Surname + " " + info.Person1Fname + " " + info.Person1MName + " and her sin is" + info.PersonSIN);
+//   }
+// }
+
+// import java.util.HashMap;
+// import java.util.logging.Handler;
+
+// public class Main {
+
+//   public static void main(int n){
+
+//     int num1  = 500;
+//     // int num2 = 400;
+
+//     int num2 = num1;
+
+//     num1 = 600;
+
+//     HashMap<String, Integer> map1 = new HashMap<>();
+//     HashMap<String, Integer> map2 = new HashMap<>();
+
+//     map1.put("value", 300);
+//     map2 = map1;
+//     map1.put("value",22);
+
+//     System.out.println(num1+num2);
+
+//   }
+// }
 
 
+// class Main {
+//   public int[] twoSum(int[] nums, int target) {
+//       int n = nums.length;
+//       for (int i = 0; i < n - 1; i++) {
+//           for (int j = i + 1; j < n; j++) {
+//               if (nums[i] + nums[j] == target) {
+//                   return new int[]{i, j};
+//               }
+//           }
+//       }
+//       return new int[]{}; // No solution found
+//   }
 
+// }
+
+
+// public class Main {
+
+//   public static void main(int[] n){
+    
+//     int len = n.length;
+
+//     for(i = 0; i < len; i++){
+//       for(j< 1; i< len; j ++){
+//         System.out.println(nums[i],nums[j]);
+//       }
+//     }
+     
+//   }
+// }
+
+
+// 2 sums
 
 // DIFFRENCE BETWEEN DOUBLE AND INT AND FLOAT
 //HOW DO I WRITE MORE THAN 1O DIGITS IN JAVA
@@ -508,3 +654,207 @@ public class Main {
 // We join strings with , and not args+ in Java
 //max Byte is 256 anyhting else it devides and send the reminder
 //casting and promotion
+
+
+// class Solution {
+//   public boolean isPalindrome(int x) {
+//    int rev ;
+//    int pal = 121;
+//    for (int i = 0; i < pal.length; i++){
+//      int rev = pal.charAt(i) + rev;
+
+//       if(rev.equals(pal)) {
+//           System.out.println("Paindrone");
+//       }
+//    }
+//   }
+// }
+
+// public class Main {
+//   public static void main(String []args ){
+
+
+//   }
+// }
+
+// package datastructures.LinkedList
+
+public class LinkedList {
+  private Node head;
+  private Node tail;
+  private int length;
+
+
+/// create the Node
+  class Node {
+    int value;
+    Node next;
+
+    Node(int value){
+      this.value = value;
+    }
+  }
+
+  public LinkedList(int value) {
+    Node newNode = new Node(value);  // this created a new node 
+    head = newNode;
+    tail = newNode;
+    length = 1;
+
+
+  }
+
+}
+
+// LinkedList myLinkedList = new LinkedList(4);
+
+// public class LinkedList {
+//  private Node head;
+//  private Node tail;
+//  private int length;
+
+//   class Node {
+//     int value;
+//     Node next;
+
+//     Node(int value){
+//       this.value = value;
+//     }
+//   }
+
+
+
+
+
+// public LinkedList (int value){
+// Node newNode = new Node (value);
+//    head = newNode;
+//    tail = newNode;
+//    length = 1;
+// }
+// LinkedList myLinkedList = new LinkedList(4);
+// }
+
+// public class Main {
+//  public  static void main(String[]args){
+
+// public class LinkedList{
+//   private Node head;
+//   private Node tail;
+//   private  int length;
+
+//   class Node{
+//     int value;
+//     Node next;
+
+//     Node ( int value ){
+//    this.value = value;
+
+//     }
+//   }
+
+
+//   public  LinkedList(int value) {
+
+//     Node newNode = new Node(value);
+//     head = newNode;
+//     tail = newNode;
+
+//   }
+
+
+//   // LinkedList myLinkedList = new LinkedList(4);
+
+// }
+// // LinkedList myLinkedList = new LinkedList(4);
+
+//  }
+// // LinkedList myLinkedList = new LinkedList(4);
+ 
+// }
+
+// //LinkedList myLinkedList = new LinkedList(4);
+
+// class Main {
+//   protected String Surname = "OKAGU";
+//   public void occupation() {
+//     System.out.println("Developer and Engineer!");
+//   }
+  
+//   protected void occupation2() {
+//     System.out.println("Developer and Doctor!");
+//   }
+// }
+
+// class Person1 extends Main {
+//   private String Person1Fname = "Jude";
+//   private String Person1MName = "Ike";
+//   private int PersonSIN = 222111;
+//   public static void main(String[] args) {
+//     Person1 info = new Person1();
+//     info.occupation2();
+//     info.occupation();
+//     System.out.println(info.Surname + " " + info.Person1Fname + " " + info.Person1MName + " and his sin is " + info.PersonSIN );
+//   }
+// }
+
+// class Person2 extends Main {
+//   private String Person1Fname = "Grace";
+//   private String Person1MName = "Amarachi";
+//   private int PersonSIN = 111222;
+//   public static void main(String[] args) {
+//     Person2 info = new Person2();
+//     info.occupation();
+//     System.out.println(info.Surname + " " + info.Person1Fname + " " + info.Person1MName + " and her sin is" + info.PersonSIN);
+//   }
+// }  
+
+
+// class Main {
+//   protected String Surname = "OKAGU";
+//   protected void occupation(){
+//     System.out.println("Yellowsman");
+//   }
+// }
+
+// class Person1 extends Main {
+//   private  int SIN =  4443;
+//   private String password = "yellowswee";
+  
+//   public static void main (String []args){
+
+//     Person1 info = new Person1();
+    
+
+//     System.out.println(info.SIN);
+//   }
+// }
+
+
+
+
+
+
+//  Class Main {
+//    protected  String Surname = "OKAGU";
+//    protected  int SIN = 38383838;
+   
+
+//   //  protected class void occupation(String []args){
+//   //   System.out.println("null");
+//   //  }
+//  }
+
+//   class Person1 extends Main {
+
+//     private String Password = "yellow";
+//     private String Secreat = "holliday";
+
+//    public static void main (String[]args){
+     
+//     Person1 info = new Person1();
+
+//      System.out.println(info.Surname);
+//    }
+//  }
+
