@@ -1083,41 +1083,41 @@
 
 
 
-class Person {
-  protected String Surname = "OKAGU";
+// class Person {
+//   protected String Surname = "OKAGU";
 
-  public void occupation() {
-    System.out.println("Developer and Engineer!");
-  }
+//   public void occupation() {
+//     System.out.println("Developer and Engineer!");
+//   }
   
-  protected void occupation2() {
-    System.out.println("Developer and Doctor!");
-  }
-}
+//   protected void occupation2() {
+//     System.out.println("Developer and Doctor!");
+//   }
+// }
 
-class Person1 extends Person {
+// class Person1 extends Person {
   
-  private String Person1Fnamee = "Jude";
-  private String Person1MName = "Ike";
-  private int PersonSIN = 222111;
-  public static void main(String[] args) {
-    Person1 info = new Person1();
-    info.occupation2();
-    info.occupation();
-    System.out.println(info.Surname + " " + info.Person1Fnamee + " " + info.Person1MName + " and his sin is " + info.PersonSIN);
-  }
-}
+//   private String Person1Fnamee = "Jude";
+//   private String Person1MName = "Ike";
+//   private int PersonSIN = 222111;
+//   public static void main(String[] args) {
+//     Person1 info = new Person1();
+//     info.occupation2();
+//     info.occupation();
+//     System.out.println(info.Surname + " " + info.Person1Fnamee + " " + info.Person1MName + " and his sin is " + info.PersonSIN);
+//   }
+// }
 
-class Person2 extends Person {
-  protected String Person1Fnames = "Grace";
-  private String Person1MName = "Amarachi";
-  private int PersonSIN = 111222;
-  public static void main(String[] args) {
-    Person2 info = new Person2();
-    info.occupation();
-    System.out.println(info.Surname + " " + info.Person1Fnames + " " + info.Person1MName + " and her sin is" + info.PersonSIN+""+info.Person1MName);
-  }
-}
+// class Person2 extends Person {
+//   protected String Person1Fnames = "Grace";
+//   private String Person1MName = "Amarachi";
+//   private int PersonSIN = 111222;
+//   public static void main(String[] args) {
+//     Person2 info = new Person2();
+//     info.occupation();
+//     System.out.println(info.Surname + " " + info.Person1Fnames + " " + info.Person1MName + " and her sin is" + info.PersonSIN+""+info.Person1MName);
+//   }
+// }
 
 
 // class Person {
@@ -1152,8 +1152,185 @@ class Person2 extends Person {
 
 
 
+public class Person {
+
+  // initialise public variables that can be used 
+
+  // Mthods functions
+
+  private String name;
+  private String membership;
+  
+  void run(String run){
+    System.err.println("I can" +run);
+  }
+
+  void set_name(String name){
+   this.name = name;
+  }
+  
+
+  String get_name(){
+   return name;
+   }
+  
+   public enum membership{
+    Gold, Silver, Yellow, can
+   }
+
+   void set_membership(String membership){
+    this.membership = membership;
+   }
+
+   void set_membership(membership membership){
+    this.membership = membership.name();
+  
+   }
+   
+     String get_membership(){
+    return membership;
+   }
+
+  
+
+   
+  
+  private String nation = "Canadian";
 
 
+
+  public static void main( String []args) {
+
+    
+
+    // devlare your node and initialize my class
+    Person jude  = new Person();
+
+    jude.set_name("James");
+    jude.set_membership(jude.membership);
+
+    System.err.println("Hello world"+jude.nation+""+jude.get_name()+""+jude.membership);
+
+  }
+
+}
+
+
+// class Person {
+//   String codeLang = "Java";
+   
+//   void run(){
+//     System.out.println("I can run");
+//   }
+
+//   void code (String code){
+//     System.out.println("I can code" + code);
+//   }
+
+// }
+
+// class Person1 extends Person {
+
+//  private String name = "jude";
+//  private int age = 22;
+//  private String location = "Bedford";
+
+//    public static void main(String[]args){
+
+//   Person1 info = new Person1();
+
+
+//  info.code("Java");
+// System.out.println("My name is " + info.name+ " and I live in"+info.location+ "" + " and I can code in"+ info.codeLang);
+//     //initiaize my node and class
+
+//   }
+
+  
+
+
+// }
+// public class Person {
+//   public static void main(String[] args) {
+//     int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7},{1, 1, 1}  };
+//     for (int i = 0; i < myNumbers.length; ++i) {
+//        for(int j = 0; j < myNumbers[i].length; ++j) {
+//           System.out.println(myNumbers[i][j]);
+//        }
+//     }
+//   }
+// }
+
+
+// public class Person {
+//   public static void main(String[] args) {
+//     String [][] myNumbers = {{"james","Adam" }, {"dave","kate" }};
+//     for (int i = 0; i < myNumbers.length; ++i) {
+//        for(int j = 0; j < myNumbers.length; ++j) {
+//           System.out.println(myNumbers[i][j]);
+//        }
+//     }
+//   }
+// }
+
+
+// public class Person{
+
+//   public static void main(String []args){
+
+//     String [][] names = {{"james","caro"},{"james","caro"}};
+
+//     // for (String i : names.length){
+//     //   System.out.println(i);
+//     // }
+
+//     for(int i = 0; i < names.length; i++){
+//         {
+//           for(int j = 0; j > names.length; j++) {
+//             System.out.println(names[i][j]);
+//           }
+//         }
+//     }
+//   }
+// }
+
+
+// public class Person {
+//   public static void main(String []args){
+
+//     String names []  = {"James","Toby"};
+
+//     for(int i = 0; i< names.length; i++){
+//       System.out.println(names[i]);
+//     }
+//   }
+// }
+
+
+// public class Person {
+//   public static void main(String []args){
+
+//     String names   = "James";
+
+//     for(int i = 0; i< names.length(); i++){
+//       System.out.println((names.charAt(i)));
+//     }
+//   }
+// }
+
+// public class Person {
+//   public static void main(String[]args){
+
+//     String names [][]  = {{"James","Toby"} ,{"Dave","Tobies"}};
+
+//     for (int i = 0; i < names.length; i++){
+//          for (int j = 0; j< names.length; j++){
+//           System.out.println((names[i][j]));
+//          }
+//     }
+
+//   }
+// }
 
 
 

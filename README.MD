@@ -411,7 +411,7 @@ Class attributes can be made read-only (if you only use the get method), or writ
 
 class Main {
   protected String Surname = "OKAGU";
-  
+
   public void occupation() {
     System.out.println("Developer and Engineer!");
   }
@@ -601,3 +601,118 @@ public class LinkedList {
 
 
 ```
+
+### Getters and Setters
+
+```
+
+public class Person {
+
+  // initialise public variables that can be used 
+
+  // Mthods functions
+
+  private String name;
+  
+  void run(String run){
+    System.err.println("I can" +run);
+  }
+
+  void set_name(String name){
+   this.name = name;
+  }
+  
+
+  String get_name(){
+   return name;
+   }
+   
+  
+  private String nation = "Canadian";
+
+
+
+  public static void main( String []args) {
+
+    
+
+    // devlare your node and initialize my class
+    Person jude  = new Person();
+
+    jude.set_name("James");
+
+    System.err.println("Hello world"+jude.nation+""+jude.get_name());
+
+  }
+
+}
+
+```
+### setters
+```
+
+public class Person {
+
+  // initialise public variables that can be used 
+
+  // Mthods functions
+
+  private String name;
+  private String membership;
+  
+  void run(String run){
+    System.err.println("I can" +run);
+  }
+
+  void set_name(String name){
+   this.name = name;
+  }
+  
+
+  String get_name(){
+   return name;
+   }
+  
+   public enum membership{
+    Gold, Silver, Yellow, can
+   }
+
+   void set_membership(String membership){
+    this.membership = membership;
+   }
+
+   void set_membership(membership membership){
+    this.membership = membership.name();
+  
+   }
+   
+     String get_membership(){
+    return membership;
+   }
+
+  
+
+   
+  
+  private String nation = "Canadian";
+
+
+
+  public static void main( String []args) {
+
+    
+
+    // devlare your node and initialize my class
+    Person jude  = new Person();
+
+    jude.set_name("James");
+    jude.set_membership(jude.membership);
+
+    System.err.println("Hello world"+jude.nation+""+jude.get_name()+""+jude.membership);
+
+  }
+
+}
+
+```
+
