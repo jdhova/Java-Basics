@@ -679,32 +679,32 @@
 
 // package datastructures.LinkedList
 
-public class LinkedList {
-  private Node head;
-  private Node tail;
-  private int length;
+// public class LinkedList {
+//   private Node head;
+//   private Node tail;
+//   private int length;
 
 
-/// create the Node
-  class Node {
-    int value;
-    Node next;
+// /// create the Node
+//   class Node {
+//     int value;
+//     Node next;
 
-    Node(int value){
-      this.value = value;
-    }
-  }
+//     Node(int value){
+//       this.value = value;
+//     }
+//   }
 
-  public LinkedList(int value) {
-    Node newNode = new Node(value);  // this created a new node 
-    head = newNode;
-    tail = newNode;
-    length = 1;
+//   public LinkedList(int value) {
+//     Node newNode = new Node(value);  // this created a new node 
+//     head = newNode;
+//     tail = newNode;
+//     length = 1;
 
 
-  }
+//   }
 
-}
+// }
 
 // LinkedList myLinkedList = new LinkedList(4);
 
@@ -858,3 +858,325 @@ public class LinkedList {
 //    }
 //  }
 
+
+// // Abstract class
+// enum Level {
+//   LOW,
+//   MEDIUM,
+//   HIGH
+// }
+
+// public class Main {
+//   public static void main(String[] args) {
+//     Level myVar = Level.MEDIUM;
+
+//     switch(myVar) {
+//       case LOW:
+//         System.out.println("Low level");
+//         break;
+//       case MEDIUM:
+//          System.out.println("Medium level");
+//         break;
+//       case HIGH:
+//         System.out.println("High level");
+//         break;
+//     }
+//   }
+// }
+
+// import java.util.ArrayList;
+// import java.util.HashMap;
+
+// public class Main{
+//   public class void main (){
+//   HashMap<String, String> cities = new HashMap <String, String>();
+    
+//   }
+// }
+
+
+// public class Main {
+//   public static void main()
+
+// }
+
+
+
+// class Person {
+
+//   String Surname = "igba";
+
+//   // create the methods
+//    void run() {
+//     System.out.println("run");
+//    }
+
+//    void code(String code) {
+//     System.out.println("Jude know how to write " + code);
+//    }
+
+//    protected void sleep() {
+//     System.out.println("sleep");
+//    }
+
+//    void setName(String name, int num) {
+//     // Surname =name;
+//     System.out.println("My name is " + name + " and age is" + num +" and surename is  :"+Surname+ " and he can");
+//    }
+
+//   public static void main(String []args){
+
+//     // initialize the methods 
+
+//     Person jude  = new Person();
+//     Person Amara = new Person();
+
+
+
+//     // use the methods
+//     jude.code("Java");;
+//     jude.run();
+//     jude.sleep();
+//     jude.setName("Jeff", 4);
+//     Amara.setName("Chi Chi", 10);
+//   }
+// }
+
+
+//  Person jude = new Person();
+
+// }
+
+
+// public class Person {
+//   // Static method
+//   static void myname() {
+//     System.out.println("My Name us Jude");
+//   }
+
+//   static void myAge(int age) {
+//     System.out.println("I am "+ age +" Years Old");
+//   }
+
+//   // Public method****
+//   public void myOccupation() {
+//     System.out.println("I am a Software Dev");
+//   }
+
+  
+//   // Public method****
+//   public void myEducation() {
+//     System.out.println("I have a Msc and PHD degree");
+//   }
+
+//   public void myYear() {
+//     System.out.println(333);
+//   }
+
+
+//   // Main method
+//   public static void main(String[] args) {
+//     myname(); // Call the static method
+//     myAge(22);
+//     Person myObj = new Person(); // Create an object of MyClass
+//     myObj.myOccupation(); // Call the public method
+//     myObj.myEducation();
+//     myObj.myYear();
+    
+
+    
+
+// class Person {
+
+//   String Surname = "Okagu";
+// /// Methods 
+
+// void run(){
+//   System.out.println("he can run");
+// }
+
+// void fname(String fname, int age){
+//   System.out.println("this is my firstname"+fname + " and I am" + age+ " and surename is "+ Surname);
+// }
+
+// void mname(String mname){
+//   System.out.println("this is my firstname"+mname + " and I am" );
+// }
+
+// static void sleep(){
+//   System.out.println("I can sleep" );
+// }
+
+
+
+//   public static void main(String [] args){
+
+//     // create the node and initiazatio of the class
+
+//     Person jude = new Person();
+//     Person amara = new Person();
+//     Person jane = new Person();
+
+//     jude.run();
+//     sleep();
+//     amara.run();
+//     amara.fname( "CHI CHI", 33);
+//     jane.fname("Dave", 22);
+
+
+    
+
+
+
+//     // System.out.println(null);
+//   }
+// }
+
+
+
+
+// class Person {
+
+//   String Surname = "Okagu";
+// /// Methods 
+
+// void run(){
+//   System.out.println("he can run");
+// }
+
+// void fname(String fname, int age){
+//   System.out.println("this is my firstname"+fname + " and I am" + age+ " and surename is "+ Surname);
+// }
+
+// void mname(String mname){
+//   System.out.println("this is my firstname"+mname + " and I am" );
+// }
+
+// static void sleep(){
+//   System.out.println("I can sleep" );
+// }
+
+
+
+//   public static void main(String [] args){
+
+//     // create the node and initiazatio of the class
+
+//     Person jude = new Person();
+//     Person amara = new Person();
+//     Person jane = new Person();
+
+//     jude.run();
+//     sleep();
+//     amara.run();
+//     amara.fname( "CHI CHI", 33);
+//     jane.fname("Dave", 22);
+
+
+    
+
+
+
+//     // System.out.println(null);
+//   }
+// }
+
+
+
+class Person {
+  protected String Surname = "OKAGU";
+
+  public void occupation() {
+    System.out.println("Developer and Engineer!");
+  }
+  
+  protected void occupation2() {
+    System.out.println("Developer and Doctor!");
+  }
+}
+
+class Person1 extends Person {
+  
+  private String Person1Fnamee = "Jude";
+  private String Person1MName = "Ike";
+  private int PersonSIN = 222111;
+  public static void main(String[] args) {
+    Person1 info = new Person1();
+    info.occupation2();
+    info.occupation();
+    System.out.println(info.Surname + " " + info.Person1Fnamee + " " + info.Person1MName + " and his sin is " + info.PersonSIN);
+  }
+}
+
+class Person2 extends Person {
+  protected String Person1Fnames = "Grace";
+  private String Person1MName = "Amarachi";
+  private int PersonSIN = 111222;
+  public static void main(String[] args) {
+    Person2 info = new Person2();
+    info.occupation();
+    System.out.println(info.Surname + " " + info.Person1Fnames + " " + info.Person1MName + " and her sin is" + info.PersonSIN+""+info.Person1MName);
+  }
+}
+
+
+// class Person {
+
+//   /// variables global
+//   private String name ="Jude";
+//   public String sex ="male";
+//   protected int info = 39393939;
+
+
+// }
+
+// class Person1 extends Person{
+
+// // METHODS 
+
+//  void occupation(String job){
+//   System.out.println(job);
+//  }
+//   static void main(){
+
+//     // INITIALIZE THE NODE 
+//     Person1 jude = new Person1();
+//     jude.occupation("developer");
+//     System.out.println(jude.sex+" and he is"+jude.info);
+  
+
+
+
+//   }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+// //   }
+// // }
+
+// // clreate the class 
+// // create the methods
+// // initiaize the methods
+// // we cna use the methods

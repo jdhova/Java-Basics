@@ -411,6 +411,7 @@ Class attributes can be made read-only (if you only use the get method), or writ
 
 class Main {
   protected String Surname = "OKAGU";
+  
   public void occupation() {
     System.out.println("Developer and Engineer!");
   }
